@@ -39,6 +39,22 @@ This app **makes real phone calls** from your device. Ensure you have enough cre
 1. Clone the repo:
 git clone https://github.com/yourusername/auto-dialer.git
 
+2. Open the project in Android Studio.
+
+3. Grant necessary permissions (e.g., CALL_PHONE, overlay permissions).
+
+4. Upload a file with phone numbers (CSV or plain text).
+
+5. Click "Start Dialing" to begin the automated calls.
+
+⚠️ Permissions Required
+CALL_PHONE
+SYSTEM_ALERT_WINDOW (for overlays)
+
+Note: This app is for educational/testing purposes. Always comply with local regulations before initiating automated calls.
+
+🙌 Contribution
+Feel free to fork and open pull requests. Suggestions and issues are welcome.
 
 
 ### ⭐️ Show your support
