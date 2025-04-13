@@ -164,14 +164,5 @@
     </com.google.android.material.card.MaterialCardView>
 
 
-    <!--    <EditText-->
-    <!--        android:id="@+id/etEmail"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:hint="Email"-->
-    <!--        android:inputType="textEmailAddress"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

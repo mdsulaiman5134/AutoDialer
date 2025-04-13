@@ -145,21 +145,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
 
-
-//                val button = view.findViewById<ImageButton>(R.id.btnSave1)
-//                button.setOnClickListener {
-////                    saveNumberToFile(phoneNumbers[position])
-//                    showDatePicker { selectedDate ->
-//                        saveNumberToFile(phoneNumbers[position], selectedDate) // Replace "12345" with the actual number to save
-//                    }
-//                    if (!isCallActive) {
-//                        removeCard(position)
-//                        callNextNumber()
-//                        updateCount(textView2)
-//                    } else {
-//                        Toast.makeText(context, "Wait for the current call to end.", Toast.LENGTH_SHORT).show()
-//                    }
-//                }
                 val button2 = view.findViewById<ImageButton>(R.id.button2)
                 button2.setOnClickListener {
                     saveNumberToFile2(phoneNumbers[position])
@@ -325,63 +310,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
-
-//    private fun saveNumberToFile(number: String) {
-//        try {
-//            val date = SimpleDateFormat("yyyyMMdd", Locale.getDefault()).format(Date())
-//            val fileName = "Accept_$date.txt"
-//
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-//                val documentsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)
-//                val file = File(documentsDir, fileName)
-//
-//                if (file.exists()) {
-//                    contentResolver.openOutputStream(Uri.fromFile(file), "wa")?.use { outputStream ->
-//                        outputStream.write("$number\n".toByteArray())
-//                    }
-//                    val filePath = file.absolutePath
-//                    Toast.makeText(this, "Number saved: $filePath", Toast.LENGTH_SHORT).show()
-//                    Log.d("FileSave", "Number appended to: $filePath")
-//                } else {
-//                    val contentValues = ContentValues().apply {
-//                        put(MediaStore.MediaColumns.DISPLAY_NAME, fileName)
-//                        put(MediaStore.MediaColumns.MIME_TYPE, "text/plain")
-//                        put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DOCUMENTS)
-//                    }
-//
-//                    val uri = contentResolver.insert(MediaStore.Files.getContentUri("external"), contentValues)
-//                    uri?.let {
-//                        contentResolver.openOutputStream(it)?.use { outputStream ->
-//                            outputStream.write("$number\n".toByteArray())
-//                        }
-//                        val filePath = it.toString()
-//                        Toast.makeText(this, "Number saved: $filePath", Toast.LENGTH_SHORT).show()
-//                        Log.d("FileSave", "Number saved to: $filePath")
-//                    }
-//                }
-//            } else {
-//                val documentsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)
-//                val file = File(documentsDir, fileName)
-//
-//                if (file.exists()) {
-//                    file.appendText("$number\n")
-//                    val filePath = file.absolutePath
-//                    Toast.makeText(this, "Number saved: $filePath", Toast.LENGTH_SHORT).show()
-//                    Log.d("FileSave", "Number appended to: $filePath")
-//                } else {
-//                    file.createNewFile()
-//                    file.appendText("$number\n")
-//                    val filePath = file.absolutePath
-//                    Toast.makeText(this, "Number saved: $filePath", Toast.LENGTH_SHORT).show()
-//                    Log.d("FileSave", "Number saved to: $filePath")
-//                }
-//            }
-//        } catch (e: Exception) {
-//            Toast.makeText(this, "Failed to save number: ${e.message}", Toast.LENGTH_SHORT).show()
-//            Log.e("FileSave", "Error saving number: ${e.message}", e)
-//        }
-//    }
 
     private fun saveNumberToFile2(number: String) {
         try {
