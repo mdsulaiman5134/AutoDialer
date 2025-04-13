@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "87976059714",
+    "project_id": "autodialer-2cd95",
+    "storage_bucket": "autodialer-2cd95.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87976059714:android:b62015503c906a45f71edb",
+        "android_client_info": {
+          "package_name": "com.example.autodialer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZK2fyyUBhW-Vc8_KcbK0M2bvfzigIvEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
